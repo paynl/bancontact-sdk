@@ -1,0 +1,23 @@
+{
+  "name": "paynl/bancontact-sdk",
+  "type": "library",
+  "require": {
+    "php": "^7.1",
+    "guzzlehttp/guzzle": "^6.3"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "andy",
+      "email": "andy@pay.nl"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Paynl\\BancontactSDK\\": "src/"
+    }
+  },
+  "scripts": {
+    "demo": "php -S 0.0.0.0:8080 -t demo/"
+  }
+}
