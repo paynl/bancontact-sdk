@@ -44,7 +44,7 @@ $bancontact = $gateway->bancontact($orderId, $entranceCode);
 ```
 
 ### Authenticate
-Now show a form to the user, you need the folowing data
+Now show a form to the user, you need the following data
 - cardHolder
 - cardNumber
 - expireYear (length = 4)
@@ -81,7 +81,7 @@ try{
 ``` 
 
 ### Get the status of a payment
-After starting a transaction (2.2) you can get the current status of a transaction by calling ```$status = $bancontact->getStatus();```
+After starting a transaction you can get the current status of a transaction by calling ```$status = $bancontact->getStatus();```
 The status object had two variables. ```$status->code``` and ```$status->description```.
 The possible status ids are:
 - 10 - Pending on start of transaction
@@ -116,4 +116,4 @@ In order to run the demo application, follow these steps:
 - Run ```composer demo``` to start the demo application
 - The demo application is now accessible from the browser on http://localhost:8080
 
-The demo application asks for the credentials (tokenCode, token an serviceId) and stores them in the session. DO NOT DO THIS IN PRODUCTION!
+The demo application asks for the credentials (tokenCode, token and serviceId) and stores them in the session. DO NOT DO THIS IN PRODUCTION!
