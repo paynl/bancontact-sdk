@@ -17,7 +17,7 @@ require_once './vendor/autoload.php';
 use Paynl\BancontactSDK\Gateway;
 
 // $gateway gives access to the APIs
-$gateway = new Gateway('AT-xxxx-xxxx', 'your-api-token');
+$gateway = new Gateway('AT-####-####', '****************************************');
 
 ```
 
@@ -25,7 +25,7 @@ $gateway = new Gateway('AT-xxxx-xxxx', 'your-api-token');
 ```php
 try{
     $transaction = $gateway->transaction()->start([
-        'serviceId' => 'SL-xxxx-xxxx',
+        'serviceId' => 'SL-####-####',
         'amount' => 10, // the amount in euro cents
         'ipAddress' => $_SERVER['REMOTE_ADDR'] // the ip address of the customer
     ]);
